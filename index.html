@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/simples.css">
+    
+    <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  
+    <title>HeadShop Music</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>HeadShop Music</a>
+
+        <ul class="navegar">
+
+            <li><a href="#"> Visão Geral</a></li>
+            <li><a href="#"> Características</a></li>
+            <li><a href="#"> Reviews</a></li>
+            <li><a href="#"> Comprar</a></li>
+        </ul> 
+
+
+        <div class="header">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu' ></i> </div>
+        </div>
+
+
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+
+         <img src="files/produto1.jpg" class="one">
+
+        </div>
+        
+        <div class="home-text">
+
+            <h1>JBL Quantum 200</h1> <br>
+            <h5>Sinta-se no centro do jogo com o JBL QuantumSOUND Signature</h5><br>
+            <h3>R$ 197,10</h3>
+            <h5 class="b1">Até 4x de R$54,75 sem juros no cartão de crédito.</h5><br>
+            <a href="#" class="btn"> COMPRAR</a>
+
+        </div>
+
+
+
+    </section>
+
+<div class="main">
+
+    <div class="main">
+            <div class="row">
+                <li><img src="files/main1.png" onclick="slider('produto1.jpg')"></li>
+
+    </div>
+
+    <div class="row2">
+        
+                <li><img src="files/main2.jpg" onclick="slider('produto2.jpg')"></li>
+    </div>
+
+
+</div>
+
+<script>
+    function slider (anything){
+        document.querySelector ('.one') .src = anything;
+    };
+
+   let menu = document.querySelector ('#menu-icon');
+   let navbar = document.querySelector ('.navbar');
+
+   menu.onclick = () => {
+    menu.classList.toggle ('bx-x');
+    navbar.classList.toggle ('open');
+   }
+</script>
+
+</body>
+
+</html>
