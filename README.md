@@ -1,8 +1,5 @@
 ## Site Ecommerce básico
 
-## Objetivo: 
-- Criar uma página tercerizada de venda de fones de ouvido (JBL) simples.
-
 ## Tecnologias utilizadas:
 
 - HTML: linguagem desenvolvimento web
